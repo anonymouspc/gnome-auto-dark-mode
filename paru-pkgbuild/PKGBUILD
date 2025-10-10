@@ -5,7 +5,7 @@ pkgdesc=paru-pkgbuild
 arch=(any)
 license=(GPL)
 url=https://github.com/anonymouspc/arch
-depends=(paru debugedit fakeroot pkgconf)
+depends=(paru debugedit fakeroot patch pkgconf)
 
 package() { 
     : 
