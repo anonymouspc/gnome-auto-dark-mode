@@ -1,4 +1,4 @@
-rm -rf */pkg/ */src/ */*.pkg.tar.zst
+cat .gitignore | xargs -I {} sh -c "rm -rf {}" 
 
 makepkg -D compute-meta   -si --noconfirm
 makepkg -D cpp-meta       -si --noconfirm
